@@ -213,6 +213,7 @@ section {
   line-height: 1.6;
   margin: 0;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .about-text {
@@ -300,6 +301,7 @@ footer {
 
   .section-title p {
     font-size: 22px;
+    white-space: normal;
   }
 
   .services {
