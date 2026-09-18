@@ -168,6 +168,52 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 ```
 
+## 共有UIパッケージ（`packages/ui`）
+
+本アプリは共有UIパッケージ `@catrare/ui`（`packages/ui`。[docs/ui/design/](../../docs/ui/design/README.md)）に依存している。`packages/ui` が利用するリソースの出典・ライセンスは以下の通り（`packages/ui/THIRD_PARTY_NOTICES.md` の内容を転記）。
+
+### shadcn/ui（GitHub, MIT）
+
+- 出典: https://ui.shadcn.com/ / https://github.com/shadcn-ui/ui
+- `packages/ui/src/components/*.tsx` は shadcn/ui のコンポーネントソース（`style: base-nova`）をCLIでコピーインし、DADS準拠に再スタイリングしたもの
+
+```
+MIT License
+
+Copyright (c) 2023 shadcn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### `@base-ui/react`（npm, MIT）／その他のnpm依存
+
+コンポーネントのヘッドレスプリミティブ。本番依存として本アプリの `pnpm list --prod` に現れ、`writeDependencyLicenses` が機械的に収録する。
+
+| パッケージ | ライセンス | 役割 |
+|---|---|---|
+| `@base-ui/react` | MIT | ヘッドレスプリミティブ |
+| `cn` | MIT | `twMerge(clsx(...))` 相当（shadcn公式） |
+| `class-variance-authority` | Apache-2.0 | variant定義 |
+| `lucide-react` | ISC | コンポーネント内部の機能アイコン |
+| `tw-animate-css` | MIT | 開閉アニメーション用ユーティリティ |
+| `shadcn` | MIT | `shadcn/tailwind.css` の提供元・CLI |
+
 ## 使用しなかったリソース
 
 以下は権利面の制約（Figmaデータ: CC BY 4.0、イラスト/アイコン素材: 専用利用規約）のため本フェーズでは使用していない（40-screens §10.18.2）。
