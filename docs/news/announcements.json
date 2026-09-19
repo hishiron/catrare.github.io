@@ -1,3 +1,14 @@
 {
-  "items": []
+  "items": [
+    {
+      "number": 438,
+      "title": "RideMetricsページ公開",
+      "app": "ridemetrics",
+      "appLabel": "Ride Metrics",
+      "kind": "info",
+      "kindLabel": "お知らせ",
+      "publishedAt": "2026-09-19",
+      "publishedAtLabel": "2026年9月19日"
+    }
+  ]
 }
