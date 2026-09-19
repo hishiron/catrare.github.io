@@ -1263,7 +1263,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ================================================================================
-@jridgewell/sourcemap-codec@1.5.5 (MIT)
+@jridgewell/sourcemap-codec@1.6.0 (MIT)
 ================================================================================
 
 --- LICENSE ---
