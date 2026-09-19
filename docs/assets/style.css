@@ -91,6 +91,22 @@ nav a:hover {
   color: var(--text);
 }
 
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.lang-switch {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.lang-switch:hover {
+  color: var(--text);
+}
+
 .hero {
   padding: 96px 0 88px;
 }
