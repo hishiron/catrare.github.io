@@ -60,7 +60,8 @@
             below for details.
           </p>
           <ul>
-            <li>If you enable Health integration: recorded workouts are saved to Apple Health, and your body weight is read from Health for calorie calculations (Section 2)</li>
+            <li>If you enable Health integration: recorded workouts, including distance, calories burned, and the GPS route, are saved to Apple Health (Section 2)</li>
+            <li>If you set your weight source to Health (in the Calorie settings): your body weight is read from Health for calorie calculations. This is independent of Health integration, and applies even if Health integration is off (Section 2)</li>
             <li>If you enable Calendar integration: a summary of each ride is added to your calendar, which may sync to iCloud or another service depending on your calendar settings (Section 2)</li>
             <li>If you use CSV/GPX export: wherever you choose to share the exported file (Section 3)</li>
           </ul>
@@ -89,11 +90,11 @@
 
           <h3>Health (Apple Health)</h3>
           <p>
-            Accessed only if you enable Health integration, as follows:
+            Read and write access are controlled independently, by two separate settings:
           </p>
           <ul>
-            <li>Read: with your permission, body weight is read to improve the accuracy of calorie calculations.</li>
-            <li>Write: recorded rides are saved to Health as workouts, including distance, calories burned, and the GPS route.</li>
+            <li>Read (body weight): if you set your weight source to Health in the App's Calorie settings, your body weight is read, with your permission, to improve the accuracy of calorie calculations. This setting is independent of Health integration below — it applies even if Health integration is off.</li>
+            <li>Write (workouts): if you enable Health integration, recorded rides are saved to Health as workouts, including distance, calories burned, and the GPS route.</li>
           </ul>
           <p>
             Data saved to Health is managed according to Apple's Health features and privacy policy.
