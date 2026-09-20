@@ -39,7 +39,7 @@ SOFTWARE.
 
 https://github.com/digital-go-jp/design-system-example-components-react
 
-デジタル庁デザインシステムのサンプルコンポーネント（React版）。`src/components/ui/styles.ts` および Phase 11 UIヘルプ部品（`src/features/help/components/`）の一部クラス構成（ボタン・フォームコントロール・エラー表示・テーブル・フォーカス表示等）は、このリポジトリのコンポーネント実装（`Button`・`Input`・`Select`・`Textarea`・`Checkbox`・`ErrorText`・`Table` 等）を参照・引用し、React 19 + Tailwind CSS v4 + ネイティブ `disabled` 属性を用いる本アプリの実装に合わせて改変している。
+デジタル庁デザインシステムのサンプルコンポーネント（React版）。共有UIパッケージ `packages/ui`（`@catrare/ui`）のコンポーネント（`src/components/`）・`src/lib/dads.ts`（旧 `src/components/ui/styles.ts` のクラス定数を置き換えたもの。`styles.ts` は issue #420 で削除済み）および Phase 11 UIヘルプ部品（`src/features/help/components/`）の一部クラス構成（ボタン・フォームコントロール・エラー表示・テーブル・フォーカス表示等）は、このリポジトリのコンポーネント実装（`Button`・`Input`・`Select`・`Textarea`・`Checkbox`・`ErrorText`・`Table` 等）を参照・引用し、React 19 + Tailwind CSS v4 + ネイティブ `disabled` 属性を用いる本アプリの実装に合わせて改変している。
 
 ```
 MIT License
