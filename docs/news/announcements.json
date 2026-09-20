@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "number": 451,
+      "title": "Catrare Ledger 1.1.0 を公開しました",
+      "app": "ledger",
+      "appLabel": "Catrare Ledger",
+      "kind": "update",
+      "kindLabel": "アップデート",
+      "publishedAt": "2026-09-20",
+      "publishedAtLabel": "2026年9月20日"
+    },
+    {
       "number": 438,
       "title": "RideMetricsページ公開",
       "app": "ridemetrics",
