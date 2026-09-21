@@ -1,6 +1,26 @@
 {
   "items": [
     {
+      "number": 521,
+      "title": "Catrare Workbill（稼働報告・請求書）を公開しました",
+      "app": "workbill",
+      "appLabel": "Catrare Workbill",
+      "kind": "release",
+      "kindLabel": "リリース",
+      "publishedAt": "2026-09-21",
+      "publishedAtLabel": "2026年9月21日"
+    },
+    {
+      "number": 520,
+      "title": "Catrare Ledger（帳簿システム）を公開しました",
+      "app": "ledger",
+      "appLabel": "Catrare Ledger",
+      "kind": "release",
+      "kindLabel": "リリース",
+      "publishedAt": "2026-09-21",
+      "publishedAtLabel": "2026年9月21日"
+    },
+    {
       "number": 438,
       "title": "RideMetricsページ公開",
       "app": "ridemetrics",
