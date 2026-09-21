@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LEDGER（帳簿システム） | カトレアテック</title>
+  <meta name="description" content="個人事業主・フリーランス向けの帳簿システム「LEDGER」の紹介ページです。収入・経費を入力すると複式簿記の仕訳を自動作成し、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="../../" class="brand" aria-label="カトレアテック ホーム">
+        <img src="../../assets/favicon.png" alt="カトレアテック ロゴ" />
+        <span class="brand-text">
+          <span>カトレアテック</span>
+          <span>Catrare Tech</span>
+        </span>
+      </a>
+
+      <nav>
+        <a href="../../">トップへ戻る</a>
+        <a href="#features">機能</a>
+        <a href="#screens">画面</a>
+        <a href="#tech">技術スタック</a>
+        <a href="../workbill/">WORKBILL</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero app-hero">
+      <div class="container">
+        <p class="eyebrow">Web App</p>
+        <h1>LEDGER<span style="font-size: 0.5em; margin-left: 0.6em; letter-spacing: 0.04em;">帳簿システム</span></h1>
+        <p class="lead">
+          個人事業主・フリーランスのための、ブラウザで使う帳簿システムです。収入・経費を簡単な入力で記録すると、複式簿記の仕訳が自動で作られ、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。データはお使いのブラウザ内だけに保存され、サーバーには送信されません。
+        </p>
+
+        <ul class="badge-list">
+          <li>無料</li>
+          <li>インストール不要</li>
+          <li>データは端末内のみ</li>
+          <li>白色申告・青色申告に対応</li>
+        </ul>
+
+        <div class="buttons">
+          <a class="button button-primary" href="../../ledger/">LEDGER を開く</a>
+          <a class="button button-secondary" href="#features">機能を見る</a>
+          <a class="button button-secondary" href="#tech">技術スタック</a>
+        </div>
+
+        <figure class="shot" style="margin-top: 48px;">
+          <a href="assets/screenshots/01-dashboard.webp" target="_blank" rel="noopener"><img src="assets/screenshots/01-dashboard.webp" alt="LEDGERのダッシュボード。年間の売上・経費・事業所得の概算、前年同期比、警告が並ぶ" width="1600" height="875" /></a>
+          <figcaption>ダッシュボード：年間の売上・経費・事業所得の概算、前年同期比、証憑不足や未確定取引の警告をひと目で確認できます。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>記帳から申告用の集計まで。</p>
+        </div>
+
+        <div class="features">
+          <div class="service-card">
+            <h3>かんたん入力・自動仕訳</h3>
+            <p>
+              収入・経費・資産・証憑を、借方・貸方を意識せずに登録できます。内部では複式簿記の仕訳を自動で作り、借方と貸方の合計が必ず一致する状態を保ちます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>家事按分</h3>
+            <p>
+              自宅家賃・通信費など、仕事とプライベート兼用の支出を科目ごとの按分率で自動計算。期間ごとに按分率を切り替えるルールや、通信回線ごとの按分にも対応します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>証憑管理・出金伝票</h3>
+            <p>
+              領収書・請求書などの証憑を取引に紐付けて保存し、日付・金額・取引先で検索できます（電子帳簿保存法を意識した設計）。領収書のない支出は出金伝票で記録・印刷できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>固定資産・減価償却</h3>
+            <p>
+              10万円以上の資産を固定資産として管理し、定額法・月割りで減価償却費を自動計算します。未償却残高の推移を一覧で確認できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>帳簿・帳票の出力</h3>
+            <p>
+              仕訳帳・総勘定元帳・残高試算表・損益計算書・貸借対照表・年間集計を表示。白色申告の収支内訳書や青色申告決算書へ転記するための集計を出力できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>年度締め・バックアップ</h3>
+            <p>
+              決算整理と年度締めで1年分の帳簿を確定（締め後は編集不可）。JSONバックアップ（パスフレーズ暗号化も選択可）でいつでも復元でき、操作ログも確認できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>カード引落消込・入金管理</h3>
+            <p>
+              クレジットカードの利用と口座引落を突き合わせて消し込み、売掛金の入金も記録できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>取り込み・出力</h3>
+            <p>
+              取引のCSV取込、帳簿・集計のCSV/JSON出力に対応。WORKBILL で確定した請求データも取り込めます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>画面ガイド・用語集</h3>
+            <p>
+              画面ごとの説明、入力欄のヒント、用語集を用意し、簿記に不慣れでも迷いにくくしています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="container">
+        <div class="section-title">
+          <h2>Screens</h2>
+          <p>実際の画面をご覧ください。</p>
+        </div>
+
+        <p class="sample-note">
+          掲載している画面は、架空の個人事業主「サンプル太郎」のダミーデータです（取引先名・金額はすべて架空のものです）。
+        </p>
+
+        <div class="feature-rows">
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>日付・金額・按分率を入れるだけ</h3>
+              <p>収入・経費を1件ずつ登録する画面です。日付・勘定科目・取引先・金額を入れると、帳簿（仕訳）は自動で作られます。家事按分率を入れると、事業で使った分の金額（事業利用額）を自動で計算します。</p>
+            <ul>
+              <li>登録前に、作成される仕訳を確認できます</li>
+              <li>勘定科目ごとの按分率が初期値として入ります</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/02-transaction-form.webp" target="_blank" rel="noopener"><img src="assets/screenshots/02-transaction-form.webp" alt="LEDGERの取引登録画面。日付・区分・勘定科目・取引先・金額・家事按分率を入力する" width="1600" height="1094" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row feature-row-wide">
+            <div class="feature-text">
+              <h3>取引を一覧で確認・絞り込み</h3>
+              <p>登録した収入・経費を、期間・区分・勘定科目・取引先で絞り込めます。家事按分率と事業利用額、入金状態、証憑の有無、確定状態が一覧で分かります。</p>
+            <ul>
+              <li>未入金（売掛）の取引は、入金があったときに消し込み</li>
+              <li>編集・複製・削除は一覧から（削除は論理削除）</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/03-transactions.webp" target="_blank" rel="noopener"><img src="assets/screenshots/03-transactions.webp" alt="LEDGERの取引一覧。取引日・区分・勘定科目・取引先・金額・按分率・事業利用額・入金状態・証憑の有無が並ぶ" width="1600" height="800" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>仕訳は自動で作られる</h3>
+              <p>取引から自動で作られた仕訳、入金消込、カード引落、手動仕訳が、仕訳帳に日付順に並びます。家事按分のある取引は、事業分と事業主貸に自動で分けて記録されます。</p>
+            <ul>
+              <li>借方と貸方の合計が一致しない仕訳は保存できません</li>
+              <li>検索結果はCSVで出力できます</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/04-journals.webp" target="_blank" rel="noopener"><img src="assets/screenshots/04-journals.webp" alt="LEDGERの仕訳帳。借方科目と金額、貸方科目と金額、取引元が日付順に並ぶ" width="1600" height="875" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>家事按分を科目ごとに設定</h3>
+              <p>自宅家賃や通信費など、仕事とプライベート兼用の支出の按分率を科目ごとに決めておきます。根拠のメモも残せて、取引登録のたびに自動で反映されます。</p>
+            <ul>
+              <li>期間ごとに按分率を切り替えるルール（活動状況の変化に対応）</li>
+              <li>複数回線の通信費は回線ごとに按分</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/05-business-ratio.webp" target="_blank" rel="noopener"><img src="assets/screenshots/05-business-ratio.webp" alt="LEDGERの家事按分設定。科目ごとの家事按分率と根拠メモを設定する" width="1600" height="938" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>証憑を取引に紐付けて保存</h3>
+              <p>領収書・請求書などの証憑を、推奨ファイル名（日付_金額_取引先_内容）で保存し、取引と紐付けて管理します。日付・金額・取引先で検索でき、取引に紐付いていない証憑もすぐ見つかります。</p>
+            <ul>
+              <li>プレビュー・編集・削除は一覧から</li>
+              <li>証憑が付いていない確定済み取引はダッシュボードで警告</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/06-evidences.webp" target="_blank" rel="noopener"><img src="assets/screenshots/06-evidences.webp" alt="LEDGERの証憑一覧。取引日・取引先・金額・ファイル名・紐付け状況が並ぶ" width="1600" height="875" loading="lazy" /></a>
+            </figure>
+          </div>
+        </div>
+
+        <div class="section-title" style="margin-top: 80px;">
+          <h2>Reports</h2>
+          <p>帳簿と申告用の出力</p>
+        </div>
+
+        <div class="shot-grid">
+          <figure class="shot">
+            <a href="assets/screenshots/07-profit-and-loss.webp" target="_blank" rel="noopener"><img src="assets/screenshots/07-profit-and-loss.webp" alt="LEDGERの損益計算書。収益と費用から所得金額を計算する" width="1600" height="906" loading="lazy" /></a>
+            <figcaption>損益計算書：1年間の収益と費用から所得金額を計算します。締め済みの年度は、締め時点の確定値をそのまま表示します。</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/screenshots/08-balance-sheet.webp" target="_blank" rel="noopener"><img src="assets/screenshots/08-balance-sheet.webp" alt="LEDGERの貸借対照表。資産の部と負債・純資産の部が一致する" width="1600" height="650" loading="lazy" /></a>
+            <figcaption>貸借対照表：年度末の資産と負債・純資産の一覧です。合計が必ず一致します。</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/screenshots/09-blue-return.webp" target="_blank" rel="noopener"><img src="assets/screenshots/09-blue-return.webp" alt="LEDGERの青色申告決算書転記用出力。収入と経費を科目ごとに集計する" width="1600" height="706" loading="lazy" /></a>
+            <figcaption>青色申告決算書転記用出力：損益計算書欄へ転記する金額を科目ごとに集計し、控除後の事業所得もシミュレーションします。</figcaption>
+          </figure>
+          <figure class="shot">
+            <a href="assets/screenshots/10-assets.webp" target="_blank" rel="noopener"><img src="assets/screenshots/10-assets.webp" alt="LEDGERの固定資産一覧。取得価額・耐用年数・償却率・未償却残高を表示する" width="1600" height="625" loading="lazy" /></a>
+            <figcaption>固定資産一覧：取得価額・耐用年数・償却率・未償却残高を確認できます。減価償却は定額法・月割りで自動計算されます。</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>ブラウザだけで完結する構成です。</p>
+        </div>
+
+        <table class="tech-table">
+          <tbody>
+            <tr><th scope="row">実行方式</th><td>ブラウザで動く静的Webアプリ（サーバー処理なし）。GitHub Pages で配布</td></tr>
+            <tr><th scope="row">フロントエンド</th><td>TypeScript ／ React 19 ／ Vite ／ React Router（HashRouter）</td></tr>
+            <tr><th scope="row">UI</th><td>Tailwind CSS v4 ／ shadcn/ui（Base UI）を土台にした共通UIパッケージ ／ Noto Sans JP（自己ホスト）／ Recharts（グラフ）</td></tr>
+            <tr><th scope="row">データ保存</th><td>IndexedDB（Dexie.js）。すべてブラウザ内に保存し、サーバーへは送信しません</td></tr>
+            <tr><th scope="row">状態管理・検証</th><td>Zustand ／ Zod（入力・バックアップの検証）</td></tr>
+            <tr><th scope="row">日付・CSV</th><td>date-fns ／ PapaParse</td></tr>
+            <tr><th scope="row">暗号化</th><td>Web Crypto API（バックアップのパスフレーズ暗号化）</td></tr>
+            <tr><th scope="row">テスト・品質</th><td>Vitest（単体テスト）／ Playwright（E2E）／ Biome（Lint・Format）</td></tr>
+            <tr><th scope="row">開発体制</th><td>pnpm モノレポで WORKBILL・LEDGER と UI 部品を共有し、設計書を正としてテスト駆動で段階的に開発しています。</td></tr>
+          </tbody>
+        </table>
+
+        <div class="principles">
+          <div class="service-card">
+            <h3>ローカルファースト</h3>
+            <p>
+              帳簿データはお使いのブラウザのIndexedDBにだけ保存し、ネットワークへは送信しません。バックアップファイルで別の端末へ移せます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>複式簿記の整合性</h3>
+            <p>
+              仕訳は借方と貸方の合計が一致しなければ保存できません。金額は整数（円）で扱い、削除はすべて論理削除、締め済みの年度は編集できません。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>安全な出力</h3>
+            <p>
+              印刷用の帳票はReactコンポーネントで描画し、CSV出力にはインジェクション対策を入れています。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>設計書ファースト</h3>
+            <p>
+              実装の前に設計書とテストケースを整え、テスト駆動で段階的に開発しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="container">
+        <div class="section-title">
+          <h2>Notes</h2>
+          <p>ご利用にあたって</p>
+        </div>
+
+        <div class="note-box">
+          <p>本システムは記帳・集計を補助するツールで、税務判断を自動化するものではありません。家事按分率・資産計上・減価償却・青色申告特別控除の適用などは、国税庁の資料、税務署、税理士等でご確認ください。</p>
+          <p>データはお使いのブラウザにだけ保存されます。ブラウザのデータ削除や端末の変更で失われることがあるため、設定画面から定期的にバックアップを保存してください。</p>
+          <p>PCのブラウザでの利用を想定しています。</p>
+        </div>
+
+        <div class="link-list">
+          <a class="button button-secondary" href="../workbill/">WORKBILL（稼働報告・請求書）の紹介</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="open">
+      <div class="container">
+        <div class="download-box">
+          <div>
+            <h2>LEDGER を使ってみる</h2>
+            <p>
+              登録・ログインは不要です。ブラウザで開くとすぐに使えます。初めて開いたときは空の状態です。
+            </p>
+          </div>
+
+          <a class="button button-primary" href="../../ledger/">LEDGER を開く</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© Catrare Tech</span>
+      <span>LEDGER</span>
+      <span><a href="../workbill/">WORKBILL</a></span>
+      <span><a href="../../privacy/">プライバシーポリシー</a></span>
+    </div>
+  </footer>
+</body>
+</html>

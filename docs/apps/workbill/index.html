@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WORKBILL（稼働報告・請求書） | カトレアテック</title>
+  <meta name="description" content="フリーランス・個人事業主向けの稼働報告書・請求書作成アプリ「WORKBILL」の紹介ページです。稼働時間を入力すると契約条件に沿って報酬を自動計算し、月次の稼働報告書と請求書を作成・発行できます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="../../" class="brand" aria-label="カトレアテック ホーム">
+        <img src="../../assets/favicon.png" alt="カトレアテック ロゴ" />
+        <span class="brand-text">
+          <span>カトレアテック</span>
+          <span>Catrare Tech</span>
+        </span>
+      </a>
+
+      <nav>
+        <a href="../../">トップへ戻る</a>
+        <a href="#features">機能</a>
+        <a href="#screens">画面</a>
+        <a href="#tech">技術スタック</a>
+        <a href="../ledger/">LEDGER</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero app-hero">
+      <div class="container">
+        <p class="eyebrow">Web App</p>
+        <h1>WORKBILL<span style="font-size: 0.5em; margin-left: 0.6em; letter-spacing: 0.04em;">稼働報告・請求書</span></h1>
+        <p class="lead">
+          フリーランス・個人事業主のための、稼働報告書と請求書を作るブラウザアプリです。日々の稼働時間を入力すると、契約条件に沿って報酬を自動計算し、月次の稼働報告書と請求書を作成・発行できます。データはお使いのブラウザ内だけに保存され、サーバーには送信されません。
+        </p>
+
+        <ul class="badge-list">
+          <li>無料</li>
+          <li>インストール不要</li>
+          <li>データは端末内のみ</li>
+          <li>LEDGERと連携</li>
+        </ul>
+
+        <div class="buttons">
+          <a class="button button-primary" href="../../workbill/">WORKBILL を開く</a>
+          <a class="button button-secondary" href="#features">機能を見る</a>
+          <a class="button button-secondary" href="#tech">技術スタック</a>
+        </div>
+
+        <figure class="shot" style="margin-top: 48px;">
+          <a href="assets/screenshots/01-dashboard.webp" target="_blank" rel="noopener"><img src="assets/screenshots/01-dashboard.webp" alt="WORKBILLのダッシュボード。年間の稼働時間と請求額を月別・案件別の積み上げグラフで表示する" width="1600" height="1094" /></a>
+          <figcaption>ダッシュボード：年間の稼働時間と請求額を、月別・案件別の積み上げグラフで確認できます。未確定の報告書・未発行の請求書・入金待ちも一目で分かります。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>稼働の入力から請求まで。</p>
+        </div>
+
+        <div class="features">
+          <div class="service-card">
+            <h3>顧客・案件・契約の管理</h3>
+            <p>
+              契約ごとに請求方式（月額固定・月額＋精算幅・時間単価・日額・固定金額）、丸め規則、税率、有効期間を設定し、顧客ごとに締め日と支払条件を設定します。条件が変わったときは期間ごとに契約を追加して履歴を残せます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>稼働カレンダー・日次入力</h3>
+            <p>
+              日々の稼働時間・休憩・作業内容を分単位で入力できます。稼働予定（祝日マスター対応）、平日の一括入力、CSVインポートにも対応します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>月末稼働予想</h3>
+            <p>
+              実績の平均と残りの稼働予定日数から、月末の稼働時間を推定します。精算幅のある契約では、基準時間に対する現在位置も確認できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>稼働報告書</h3>
+            <p>
+              月次の報告書を作成し、下書き・確定・提出・承認の状態で管理します。確定すると内容は凍結され、修正は差戻しで行います。印刷用の表示からPDFに保存できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>報酬計算・請求書の作成</h3>
+            <p>
+              契約条件と稼働から請求明細を自動で生成します。消費税は税率ごとに1回の端数処理。手動の明細追加、請求書番号の採番、支払期限の算出にも対応します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>発行・改訂・入金管理</h3>
+            <p>
+              発行すると番号が確定し、編集できなくなります。修正は改訂（Rev.n）で行い、送付・入金の記録や期日超過の強調表示、取消にも対応します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>請求書の検索・印刷</h3>
+            <p>
+              発行日・請求額の範囲・取引先・請求書番号で検索できます（電子帳簿保存法を意識した設計）。登録番号や税率別の集計を記載した書式で印刷確認し、PDFに保存できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>ダッシュボード</h3>
+            <p>
+              年間の稼働時間・請求額の推移を、案件別の内訳つきで表示します。未確定の報告書・未発行の請求書・入金待ち・期日超過を一目で確認できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>LEDGER連携・バックアップ</h3>
+            <p>
+              確定した請求データをJSONで出力し、LEDGERへ取り込めます。JSONバックアップからの復元にも対応します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="container">
+        <div class="section-title">
+          <h2>Screens</h2>
+          <p>実際の画面をご覧ください。</p>
+        </div>
+
+        <p class="sample-note">
+          掲載している画面は、架空の個人事業主「サンプル太郎」のダミーデータです（取引先名・金額はすべて架空のものです）。
+        </p>
+
+        <div class="feature-rows">
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>顧客・案件・契約を管理</h3>
+              <p>案件ごとに、期間別の契約を版管理します。たとえば「1〜5月は月額固定、6月から日額」のように条件が変わっても、対象月の契約が自動で計算に使われます。</p>
+            <ul>
+              <li>請求方式：月額固定・月額＋精算幅・時間単価・日額・固定金額</li>
+              <li>丸め規則・税率・有効期間は契約ごとに、締め日・支払条件は顧客ごとに設定</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/02-contracts.webp" target="_blank" rel="noopener"><img src="assets/screenshots/02-contracts.webp" alt="WORKBILLの契約一覧。案件ごとの契約を期間別に管理する" width="1600" height="525" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row feature-row-wide">
+            <div class="feature-text">
+              <h3>稼働カレンダーで日々の稼働を入力</h3>
+              <p>案件と月を選び、日々の稼働時間と作業内容を入力します。稼働予定を切り替えると、月末の稼働予想が更新されます。精算幅のある契約では、基準時間に対する現在位置も表示されます。</p>
+            <ul>
+              <li>休日は既定で非稼働（祝日マスター対応）</li>
+              <li>平日一括入力・CSVインポートに対応</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/03-worklog-calendar.webp" target="_blank" rel="noopener"><img src="assets/screenshots/03-worklog-calendar.webp" alt="WORKBILLの稼働カレンダー。日ごとの稼働予定・時刻・休憩・実稼働・作業内容を入力する" width="1600" height="1000" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>月次の稼働報告書を作成</h3>
+              <p>1か月の稼働をまとめて顧客に提出する報告書です。確定すると対象月の稼働入力がロックされ、内容が凍結されます。修正は差戻しで行い、経緯が分かる状態を保ちます。</p>
+            <ul>
+              <li>状態：下書き → 確定 → 提出 → 承認</li>
+              <li>印刷用の表示からPDFに保存</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/04-work-report.webp" target="_blank" rel="noopener"><img src="assets/screenshots/04-work-report.webp" alt="WORKBILLの稼働報告書。日別の稼働内訳と月間の合計を表示する" width="1600" height="938" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row feature-row-wide">
+            <div class="feature-text">
+              <h3>請求書を状態別に管理</h3>
+              <p>請求書を状態・顧客・発行日・請求額・取引先で絞り込めます。支払期限を過ぎた請求書は赤く強調され、LEDGERへの連携状況も一覧で確認できます。</p>
+            <ul>
+              <li>報告書から生成、または顧客を選んで手動作成</li>
+              <li>改訂した請求書は版（Rev.n）で絞り込み</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/05-invoice-list.webp" target="_blank" rel="noopener"><img src="assets/screenshots/05-invoice-list.webp" alt="WORKBILLの請求書一覧。請求書番号・顧客・案件・状態・支払期限・請求額・LEDGER連携状況が並ぶ" width="1600" height="1150" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>契約と稼働から請求書を自動計算</h3>
+              <p>契約条件と確定した稼働から、請求明細を自動で作ります。精算幅の上限超過分の加算や、税率ごとの消費税の集計も自動です。発行すると番号が確定し、修正は改訂で行います。</p>
+            <ul>
+              <li>消費税は税率ごとに1回の端数処理</li>
+              <li>源泉徴収税額は自動判定せず、手入力で対応</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/06-invoice-detail.webp" target="_blank" rel="noopener"><img src="assets/screenshots/06-invoice-detail.webp" alt="WORKBILLの請求書詳細。請求明細、税率別集計、請求額、振込依頼額を表示する" width="1600" height="1125" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>印刷確認してPDFに保存</h3>
+              <p>登録番号・振込先・税率別の集計を記載した書式で、請求書を印刷確認できます。ブラウザの印刷機能から「PDFとして保存」を選ぶと、ファイルとして保存できます。</p>
+            <ul>
+              <li>推奨ファイル名を画面に表示</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/07-invoice-print.webp" target="_blank" rel="noopener"><img src="assets/screenshots/07-invoice-print.webp" alt="WORKBILLの請求書印刷ビュー。宛名・請求書番号・請求金額・明細・税率別集計・振込先を表示する" width="1600" height="1063" loading="lazy" /></a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>ブラウザだけで完結する構成です。</p>
+        </div>
+
+        <table class="tech-table">
+          <tbody>
+            <tr><th scope="row">実行方式</th><td>ブラウザで動く静的Webアプリ（サーバー処理なし）。GitHub Pages で配布</td></tr>
+            <tr><th scope="row">フロントエンド</th><td>TypeScript ／ React 19 ／ Vite ／ React Router（HashRouter）</td></tr>
+            <tr><th scope="row">UI</th><td>Tailwind CSS v4 ／ shadcn/ui（Base UI）を土台にした共通UIパッケージ ／ Noto Sans JP（自己ホスト）／ Recharts（グラフ）</td></tr>
+            <tr><th scope="row">データ保存</th><td>IndexedDB（Dexie.js）。すべてブラウザ内に保存し、サーバーへは送信しません</td></tr>
+            <tr><th scope="row">状態管理・検証</th><td>Zustand ／ Zod（入力・バックアップの検証）</td></tr>
+            <tr><th scope="row">日付・CSV</th><td>date-fns ／ PapaParse</td></tr>
+            <tr><th scope="row">テスト・品質</th><td>Vitest（単体テスト）／ Playwright（E2E）／ Biome（Lint・Format）</td></tr>
+            <tr><th scope="row">開発体制</th><td>pnpm モノレポで WORKBILL・LEDGER と UI 部品を共有し、設計書を正としてテスト駆動で段階的に開発しています。</td></tr>
+          </tbody>
+        </table>
+
+        <div class="principles">
+          <div class="service-card">
+            <h3>ローカルファースト</h3>
+            <p>
+              稼働・請求のデータはお使いのブラウザのIndexedDBにだけ保存し、ネットワークへは送信しません。JSONバックアップで別の端末へ移せます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>計算ルールを純関数に集約</h3>
+            <p>
+              時間は分単位の整数で扱い、丸め・報酬計算・消費税の端数処理は入出力を持たない純関数にまとめ、同じ入力から必ず同じ結果になるようテストで固定しています。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>確定したものは凍結</h3>
+            <p>
+              確定済みの報告書・発行済みの請求書はスナップショットとして凍結します。直接編集はできず、差戻し・改訂という手順だけで変更します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>LEDGERとの疎結合</h3>
+            <p>
+              帳簿は別アプリのLEDGERが担い、確定した請求データをJSONファイルで受け渡します。売上取引・売掛金・入金の正本はLEDGERです。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="container">
+        <div class="section-title">
+          <h2>Notes</h2>
+          <p>ご利用にあたって</p>
+        </div>
+
+        <div class="note-box">
+          <p>本アプリは稼働報告・請求書作成を補助するツールです。消費税・源泉徴収などの税務上の扱いは、ご自身の契約や状況に合わせてご確認ください（源泉徴収は自動判定しません）。</p>
+          <p>データはお使いのブラウザにだけ保存されます。ブラウザのデータ削除や端末の変更で失われることがあるため、設定画面から定期的にバックアップを保存してください。</p>
+          <p>PCのブラウザでの利用を想定しています。</p>
+        </div>
+
+        <div class="link-list">
+          <a class="button button-secondary" href="../ledger/">LEDGER（帳簿システム）の紹介</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="open">
+      <div class="container">
+        <div class="download-box">
+          <div>
+            <h2>WORKBILL を使ってみる</h2>
+            <p>
+              登録・ログインは不要です。ブラウザで開くとすぐに使えます。初めて開いたときは空の状態です。
+            </p>
+          </div>
+
+          <a class="button button-primary" href="../../workbill/">WORKBILL を開く</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© Catrare Tech</span>
+      <span>WORKBILL</span>
+      <span><a href="../ledger/">LEDGER</a></span>
+      <span><a href="../../privacy/">プライバシーポリシー</a></span>
+    </div>
+  </footer>
+</body>
+</html>
