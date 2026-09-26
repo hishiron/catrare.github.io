@@ -417,12 +417,219 @@ a {
   font-size: 0.9375rem;
 }
 
-/* 事業紹介（暫定。Phase 3 でプロフィールへ置き換え予定） */
+/* 担当実績（トップは見出し一覧、詳細は works/ ページ。会社員時代の実績） */
 
-.ct-about-text {
-  max-width: 720px;
+.ct-works-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 880px;
+  border-top: 1px solid var(--ct-color-border);
+}
+
+.ct-works-list > li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--ct-color-border);
+}
+
+.ct-works-list a {
+  font-weight: 700;
+}
+
+.ct-works-list span {
+  font-size: 0.875rem;
+  color: var(--ct-color-muted);
+}
+
+.ct-works-more {
+  margin: 20px 0 0;
+  font-weight: 700;
+}
+
+/* 下層ページ（works/）の見出し部 */
+
+.ct-page-hero {
+  padding: 40px 0 8px;
+}
+
+@media (min-width: 768px) {
+  .ct-page-hero {
+    padding: 56px 0 8px;
+  }
+}
+
+.ct-breadcrumb {
+  margin: 0 0 12px;
+  font-size: 0.875rem;
+  color: var(--ct-color-muted);
+}
+
+.ct-page-hero h1 {
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.ct-page-lead {
+  margin: 0 0 16px;
+  color: var(--ct-color-muted);
+}
+
+.ct-works-page {
+  border-top: none;
+  padding-top: 16px;
+}
+
+.ct-work h2 {
+  margin: 0 0 4px;
+  font-size: clamp(1.1875rem, 1.1rem + 0.4vw, 1.375rem);
+  line-height: 1.5;
+}
+
+.ct-work-period {
+  margin: 0 0 16px;
+  font-size: 0.875rem;
+  color: var(--ct-color-muted);
+}
+
+.ct-work-facts ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.ct-work-facts li + li {
+  margin-top: 4px;
+}
+
+.ct-works-footer {
+  margin-top: 40px;
+  max-width: 880px;
+}
+
+.ct-works-footer p {
+  margin: 0 0 16px;
+  color: var(--ct-color-muted);
+}
+
+.ct-nav a[aria-current="page"] {
+  color: var(--ct-color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+/* 担当実績の詳細カード（works/ ページ） */
+
+.ct-works-note {
+  margin: 0 0 20px;
+  font-size: 0.9375rem;
+  color: var(--ct-color-muted);
+}
+
+.ct-works {
+  display: grid;
+  gap: 20px;
+  max-width: 880px;
+}
+
+.ct-work {
+  border: 1px solid var(--ct-color-border);
+  border-radius: 16px;
+  padding: 24px;
+  background: var(--ct-color-bg);
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .ct-work {
+    padding: 28px;
+  }
+}
+
+.ct-work-label {
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ct-color-muted);
+  background: var(--ct-color-surface);
+  border: 1px solid var(--ct-color-border);
+  border-radius: 999px;
+  padding: 3px 12px;
+}
+
+
+.ct-work-facts,
+.ct-profile-facts {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.ct-work-facts > div,
+.ct-profile-facts > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+
+@media (min-width: 768px) {
+  .ct-work-facts > div {
+    grid-template-columns: 8em 1fr;
+    gap: 16px;
+  }
+}
+
+.ct-work-facts dt,
+.ct-profile-facts dt {
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+
+.ct-work-facts dd,
+.ct-profile-facts dd {
   margin: 0;
   color: var(--ct-color-muted);
+  font-size: 0.9375rem;
+}
+
+/* プロフィール（写真なし・テキスト中心） */
+
+.ct-profile {
+  max-width: 720px;
+}
+
+.ct-profile-name {
+  margin: 0;
+  font-size: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.ct-profile-name rt {
+  font-size: 0.5em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--ct-color-muted);
+}
+
+.ct-profile-title {
+  margin: 4px 0 20px;
+  font-size: 0.9375rem;
+  color: var(--ct-color-muted);
+}
+
+.ct-profile-intro {
+  margin: 0 0 24px;
+}
+
+.ct-profile-facts {
+  border-top: 1px solid var(--ct-color-border);
+  padding-top: 20px;
 }
 
 /* 自社プロダクト（Webアプリ / iOSアプリ / LINEスタンプのカテゴリ別・同一サイズカード） */
