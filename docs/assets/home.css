@@ -338,12 +338,6 @@ a {
   background: var(--ct-color-surface);
 }
 
-.ct-button-disabled {
-  border: 1px solid var(--ct-color-border);
-  color: var(--ct-color-muted);
-  background: var(--ct-color-surface);
-}
-
 /* サービス */
 
 .ct-services {
@@ -431,22 +425,31 @@ a {
   color: var(--ct-color-muted);
 }
 
-/* 自社プロダクト（Phase 1 では現行5枚カードの見た目を維持。刷新は Phase 2） */
+/* 自社プロダクト（Webアプリ / iOSアプリ / LINEスタンプのカテゴリ別・同一サイズカード） */
 
-.ct-products {
+.ct-products-category {
+  margin: 40px 0 16px;
+  font-size: clamp(1.1875rem, 1.1rem + 0.4vw, 1.375rem);
+}
+
+.ct-products-category:first-of-type {
+  margin-top: 0;
+}
+
+.ct-products-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
 @media (min-width: 768px) {
-  .ct-products {
+  .ct-products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .ct-products {
+  .ct-products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -470,7 +473,7 @@ a {
   overflow: hidden;
 }
 
-.ct-product-visual-shot img {
+.ct-product-visual img {
   display: block;
   width: 100%;
   height: 100%;
@@ -479,11 +482,9 @@ a {
 }
 
 .ct-product-visual-icon img {
-  display: block;
   width: 96px;
   height: 96px;
   border-radius: 22px;
-  object-fit: cover;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
@@ -492,6 +493,28 @@ a {
   height: 120px;
   border-radius: 0;
   box-shadow: none;
+}
+
+/* カードの画像部分の背景（iOSアプリ・LINEスタンプ） */
+
+.ct-product-visual-ridemetrics {
+  /* 海岸線を走る風景の様式化: 空 → 海、左下に砂浜の弧 */
+  background:
+    radial-gradient(130% 90% at -15% 115%, #f0e0c2 0 30%, rgba(240, 224, 194, 0) 31%),
+    linear-gradient(180deg, #d7ecf8 0%, #eef7fc 44%, #8ecbdc 45%, #5aa9c4 100%);
+}
+
+.ct-product-visual-nyanclimb {
+  background-image: url("../nyanclimb/assets/title-bg-bottom.webp");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.ct-product-visual-line {
+  /* LINEを思わせる緑。スタンプの周りは白いぼかしで薄くする */
+  background:
+    radial-gradient(circle 130px at 50% 50%, rgba(255, 255, 255, 0.9) 0 40%, rgba(255, 255, 255, 0) 100%),
+    #06c755;
 }
 
 .ct-product-body {
@@ -510,7 +533,7 @@ a {
   color: var(--ct-color-muted);
 }
 
-.ct-product-card h3 {
+.ct-product-card h4 {
   margin: 0;
   font-size: 1.1875rem;
   line-height: 1.5;
@@ -524,6 +547,12 @@ a {
 
 .ct-product-status {
   margin: 0;
+}
+
+.ct-product-newtab {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--ct-color-muted);
 }
 
 .ct-status-badge {
@@ -545,12 +574,6 @@ a {
   padding-top: 10px;
   flex-direction: row;
   align-items: center;
-}
-
-.ct-product-body .ct-button {
-  min-height: 44px;
-  padding: 8px 18px;
-  font-size: 0.9375rem;
 }
 
 /* お知らせ（ウィジェット契約クラス。名前は変更しない） */
