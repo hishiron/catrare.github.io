@@ -195,7 +195,7 @@ a {
   text-decoration: none !important;
 }
 
-/* モバイルメニュー（home.js が初期化できたときだけ開閉式。JSなしは上のナビを折り返して表示） */
+/* モバイルメニュー（JSが有効なとき＝html.ct-js のときだけ開閉式。JSなし・home.js 読み込み失敗時は上のナビを折り返して表示） */
 
 .ct-nav-toggle {
   display: none;
@@ -258,11 +258,11 @@ a {
 }
 
 @media (max-width: 1023px) {
-  .ct-header.is-enhanced .ct-nav-toggle {
+  .ct-js .ct-header .ct-nav-toggle {
     display: inline-flex;
   }
 
-  .ct-header.is-enhanced .ct-nav {
+  .ct-js .ct-header .ct-nav {
     display: none;
     width: 100%;
     flex-direction: column;
@@ -272,17 +272,17 @@ a {
     border-top: 1px solid var(--ct-color-border);
   }
 
-  .ct-header.is-enhanced.is-open .ct-nav {
+  .ct-js .ct-header.is-open .ct-nav {
     display: flex;
   }
 
-  .ct-header.is-enhanced .ct-nav a {
+  .ct-js .ct-header .ct-nav a {
     padding: 10px 2px;
     border-bottom: 1px solid var(--ct-color-border);
     color: var(--ct-color-text);
   }
 
-  .ct-header.is-enhanced .ct-nav .ct-nav-cta {
+  .ct-js .ct-header .ct-nav .ct-nav-cta {
     margin-top: 12px;
     justify-content: center;
     border-bottom: none;
