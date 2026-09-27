@@ -66,6 +66,11 @@ a {
   border-radius: 2px;
 }
 
+/* メニューからの移動でフォーカスを受けるセクション。マウス操作時だけ枠を出さない */
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .ct-container {
   width: min(1120px, 100% - 40px);
   margin: 0 auto;
@@ -188,6 +193,100 @@ a {
 .ct-nav-cta:hover {
   background: var(--ct-color-primary-hover);
   text-decoration: none !important;
+}
+
+/* モバイルメニュー（home.js が初期化できたときだけ開閉式。JSなしは上のナビを折り返して表示） */
+
+.ct-nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--ct-color-control-border);
+  border-radius: 8px;
+  background: var(--ct-color-bg);
+  color: var(--ct-color-text);
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ct-nav-toggle-icon,
+.ct-nav-toggle-icon::before,
+.ct-nav-toggle-icon::after {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+.ct-nav-toggle-icon {
+  position: relative;
+}
+
+.ct-nav-toggle-icon::before,
+.ct-nav-toggle-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.ct-nav-toggle-icon::before {
+  top: -6px;
+}
+
+.ct-nav-toggle-icon::after {
+  top: 6px;
+}
+
+.ct-header.is-open .ct-nav-toggle-icon {
+  background: transparent;
+}
+
+.ct-header.is-open .ct-nav-toggle-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.ct-header.is-open .ct-nav-toggle-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+  .ct-header.is-enhanced .ct-nav-toggle {
+    display: inline-flex;
+  }
+
+  .ct-header.is-enhanced .ct-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 4px 0 8px;
+    border-top: 1px solid var(--ct-color-border);
+  }
+
+  .ct-header.is-enhanced.is-open .ct-nav {
+    display: flex;
+  }
+
+  .ct-header.is-enhanced .ct-nav a {
+    padding: 10px 2px;
+    border-bottom: 1px solid var(--ct-color-border);
+    color: var(--ct-color-text);
+  }
+
+  .ct-header.is-enhanced .ct-nav .ct-nav-cta {
+    margin-top: 12px;
+    justify-content: center;
+    border-bottom: none;
+  }
 }
 
 /* セクション共通 */
