@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>自社プロダクト | カトレアテック | Catrare Tech</title>
+  <meta name="description" content="カトレアテックが開発・提供している自社プロダクトです。Webアプリ（帳簿システム LEDGER・稼働報告と請求書の WORKBILL）、iPhoneアプリ（Ride Metrics・にゃんくらいむ）、LINEスタンプをご紹介します。" />
+  <link rel="canonical" href="https://www.catrare-tech.jp/products/" />
+
+  <script>
+    // モバイルメニューを最初の描画から閉じた状態で描き、初期化時のレイアウトのずれを防ぐ。
+    // home.js が読み込めなかった場合は DOMContentLoaded 時点で外し、ナビを表示に戻す
+    // （defer の成否はこの時点で確定し、画像の読み込み完了は待たない）。
+    document.documentElement.classList.add("ct-js");
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!document.querySelector(".ct-header.is-enhanced")) document.documentElement.classList.remove("ct-js");
+    });
+  </script>
+  <link rel="stylesheet" href="../assets/home.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+</head>
+
+<body>
+  <a class="ct-skip-link" href="#main">本文へ移動</a>
+
+  <header class="ct-header" id="top">
+    <div class="ct-container ct-header-inner">
+      <a href="../" class="ct-brand">
+        <img src="../assets/favicon.png" alt="" width="40" height="40" />
+        <span class="ct-brand-text">
+          <span>カトレアテック</span>
+          <span>Catrare Tech</span>
+        </span>
+      </a>
+
+      <button class="ct-nav-toggle" type="button" aria-controls="ct-nav" aria-expanded="false">
+        <span class="ct-nav-toggle-icon" aria-hidden="true"></span>
+        メニュー
+      </button>
+
+      <nav class="ct-nav" id="ct-nav" aria-label="メイン">
+        <a href="../#services">サービス</a>
+        <a href="../#works">担当実績</a>
+        <a href="../#about">プロフィール</a>
+        <a href="./" aria-current="page">プロダクト</a>
+        <a class="ct-nav-cta" href="../#contact">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ct-page-hero">
+      <div class="ct-container">
+        <p class="ct-breadcrumb"><a href="../">トップ</a> ／ 自社プロダクト</p>
+        <h1>自社プロダクト</h1>
+        <p class="ct-page-lead">日々の業務や暮らしの中の課題から、自社プロダクトの開発にも取り組んでいます。</p>
+      </div>
+    </section>
+
+    <section class="ct-section ct-works-page">
+      <div class="ct-container">
+        <h2 class="ct-products-category">Webアプリ</h2>
+        <div class="ct-products-grid">
+          <article class="ct-product-card" id="ledger">
+            <div class="ct-product-visual">
+              <img src="../ledger/assets/screenshots/01-dashboard.webp" alt="LEDGERのダッシュボード画面" width="1600" height="875" loading="lazy" />
+            </div>
+            <div class="ct-product-body">
+              <p class="ct-product-eyebrow">会計・帳簿管理ツール</p>
+              <h3>LEDGER（帳簿システム）</h3>
+              <p class="ct-product-desc">
+                日々の取引や帳簿の管理を支える、個人事業主向けのツールです。無料でブラウザから使え、データは端末内に保存されます。
+              </p>
+              <div class="ct-buttons">
+                <a class="ct-button ct-button-primary" href="../ledger/">詳しく見る</a>
+                <a class="ct-button ct-button-secondary" href="../apps/ledger/">アプリを開く</a>
+              </div>
+              <p class="ct-pc-note">PCのブラウザでのご利用を想定しています。</p>
+            </div>
+          </article>
+
+          <article class="ct-product-card" id="workbill">
+            <div class="ct-product-visual">
+              <img src="../workbill/assets/screenshots/01-dashboard.webp" alt="WORKBILLのダッシュボード画面" width="1600" height="1094" loading="lazy" />
+            </div>
+            <div class="ct-product-body">
+              <p class="ct-product-eyebrow">稼働報告・請求書作成ツール</p>
+              <h3>WORKBILL（稼働報告・請求書）</h3>
+              <p class="ct-product-desc">
+                稼働内容の整理から報告書・請求書の作成までを支える、フリーランス向けのツールです。無料でブラウザから使え、データは端末内に保存されます。
+              </p>
+              <div class="ct-buttons">
+                <a class="ct-button ct-button-primary" href="../workbill/">詳しく見る</a>
+                <a class="ct-button ct-button-secondary" href="../apps/workbill/">アプリを開く</a>
+              </div>
+              <p class="ct-pc-note">PCのブラウザでのご利用を想定しています。</p>
+            </div>
+          </article>
+        </div>
+
+        <h2 class="ct-products-category">iOSアプリ</h2>
+        <div class="ct-products-grid">
+          <article class="ct-product-card" id="ridemetrics">
+            <div class="ct-product-visual ct-product-visual-icon ct-product-visual-ridemetrics">
+              <img src="../ridemetrics/assets/app-icon.png" alt="Ride Metrics アプリアイコン" width="240" height="240" loading="lazy" />
+            </div>
+            <div class="ct-product-body">
+              <p class="ct-product-eyebrow">自転車ライド計測</p>
+              <h3>Ride Metrics</h3>
+              <p class="ct-product-desc">
+                自転車ライドの走行ルート・速度・距離を記録・計測するiPhoneアプリです。計測データは端末内に保存されます。
+              </p>
+              <p class="ct-product-status"><span class="ct-status-badge">App Store 近日公開</span></p>
+              <div class="ct-buttons">
+                <a class="ct-button ct-button-primary" href="../ridemetrics/">詳しく見る</a>
+                <a class="ct-button ct-button-secondary" href="../ridemetrics/privacy/">プライバシーポリシー</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="ct-product-card" id="nyanclimb">
+            <div class="ct-product-visual ct-product-visual-icon ct-product-visual-nyanclimb">
+              <img src="../nyanclimb/assets/app-icon.png" alt="にゃんくらいむ アプリアイコン" width="240" height="240" loading="lazy" />
+            </div>
+            <div class="ct-product-body">
+              <p class="ct-product-eyebrow">ジャンプアクションゲーム</p>
+              <h3>にゃんくらいむ</h3>
+              <p class="ct-product-desc">
+                iPhoneを傾けて猫を操作し、床を飛び移りながら上へ登り続ける縦スクロールのジャンプアクションゲームです。無料で遊べます（広告表示あり）。
+              </p>
+              <p class="ct-product-status"><span class="ct-status-badge">App Store 近日公開</span></p>
+              <div class="ct-buttons">
+                <a class="ct-button ct-button-secondary" href="../nyanclimb/privacy/">プライバシーポリシー</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h2 class="ct-products-category">LINEスタンプ</h2>
+        <div class="ct-products-grid">
+          <article class="ct-product-card" id="line-sticker">
+            <div class="ct-product-visual ct-product-visual-icon ct-product-visual-sticker ct-product-visual-line">
+              <img src="../assets/products/line-sticker.png" alt="ミヌエット風もふもふ猫スタンプ v2 の代表画像" width="240" height="240" loading="lazy" />
+            </div>
+            <div class="ct-product-body">
+              <p class="ct-product-eyebrow">猫のスタンプ</p>
+              <h3>ミヌエット風もふもふ猫スタンプ v2</h3>
+              <p class="ct-product-desc">
+                ミヌエットをモデルにした、もふもふ猫のやさしい癒しスタンプを LINE STORE で販売しています。
+              </p>
+              <div class="ct-buttons">
+                <a class="ct-button ct-button-primary" href="https://store.line.me/stickershop/author/6473578/ja" target="_blank" rel="noopener noreferrer">LINE STORE で見る</a>
+              </div>
+              <p class="ct-product-newtab">LINE STORE は新しいタブで開きます。</p>
+            </div>
+          </article>
+        </div>
+        <div class="ct-works-footer">
+          <p>システム開発や運用改善、データ・AIの業務活用のご相談は、トップページのお問い合わせ欄からどうぞ。</p>
+          <div class="ct-buttons">
+            <a class="ct-button ct-button-primary" href="../#contact">お問い合わせ欄へ</a>
+            <a class="ct-button ct-button-secondary" href="../">トップへ戻る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ct-footer">
+    <div class="ct-container ct-footer-inner">
+      <span>© Catrare Tech</span>
+      <span class="ct-footer-links">
+        <a href="../privacy/">プライバシーポリシー</a>
+        <a href="../news/">お知らせ一覧</a>
+      </span>
+    </div>
+  </footer>
+  <script src="../assets/home.js" defer></script>
+</body>
+</html>
