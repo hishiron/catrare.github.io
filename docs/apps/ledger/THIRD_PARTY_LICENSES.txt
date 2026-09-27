@@ -8368,7 +8368,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ================================================================================
-nanoid@3.3.16 (MIT)
+nanoid@3.3.19 (MIT)
 ================================================================================
 
 --- LICENSE ---
@@ -9413,7 +9413,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ================================================================================
-react-router-dom@7.18.1 (MIT)
+react-router-dom@7.18.4 (MIT)
 ================================================================================
 
 --- LICENSE.md ---
@@ -9442,7 +9442,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ================================================================================
-react-router@7.18.1 (MIT)
+react-router@7.18.4 (MIT)
 ================================================================================
 
 --- LICENSE.md ---
