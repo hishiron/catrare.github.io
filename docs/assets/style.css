@@ -995,6 +995,11 @@ footer {
   margin-top: 8px;
 }
 
+/* 「開く」ボタンと案内をまとめた要素を含むボタン行。案内の分だけ他のボタンが縦に伸びないようにする */
+.buttons-start {
+  align-items: flex-start;
+}
+
 @media (max-width: 1023px) {
   .pc-note {
     display: block;
