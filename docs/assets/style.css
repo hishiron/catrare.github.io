@@ -1005,3 +1005,98 @@ footer {
     display: block;
   }
 }
+
+/* にゃんくらいむ 紹介ページ（docs/nyanclimb/） */
+
+.app-hero .status-badge {
+  margin: 0 0 20px;
+}
+
+/* ステージ一覧: アプリの背景画像（4:3）＋番号＋名前。PCもスマホも3列 */
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stage-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.stage-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.stage-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.stage-no {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* 縦長の画面キャプチャ（iPhoneゲーム）: 1枚の幅を抑えて中央に並べる */
+.screenshots-portrait {
+  grid-template-columns: repeat(auto-fit, minmax(0, 320px));
+  justify-content: center;
+}
+
+@media (max-width: 820px) {
+  .stage-grid {
+    gap: 10px;
+  }
+
+  .stage-card {
+    border-radius: 12px;
+  }
+
+  .stage-name {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 6px 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .stage-no {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+
+  .screenshots-portrait {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+}
+
+/* 中央寄せになる狭い画面の app-hero で、ボタンも中央に揃える */
+@media (max-width: 820px) {
+  .buttons-center-narrow {
+    justify-content: center;
+  }
+}
