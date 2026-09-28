@@ -1,0 +1,69 @@
+# カトレアテック（Catrare Tech）
+
+> カトレアテックは、業務システムの開発、既存システムの改善、データ・AIの業務活用を支援する個人事業です。あわせて、帳簿・請求書のWebアプリやiPhoneアプリなどの自社プロダクトを開発・提供しています。
+
+- 公式サイト: https://www.catrare-tech.jp/
+- 担当者: 城野 秀峰（しろの ひでみね）。2000年からソフトウェアエンジニアとして約26年、インターネットサービスのシステム開発・運用に携わってきました
+- お問い合わせ: https://forms.gle/qboLYgkYVDfNm7Wd7 （Google フォーム）。支援内容・期間・対応時間は、状況とご希望を伺ったうえで個別に相談します
+
+## サービス
+
+- システム開発: 業務の流れや必要な機能を整理し、Webシステムや業務支援ツールを設計・開発します。対応範囲は要件整理・設計・実装・テスト
+- 既存システムの改善: 現在のシステムと運用を確認し、課題と優先順位を整理して、必要な改修を進めます。対応範囲は現状調査・課題整理・改善方針・改修
+- データ・AIの業務活用: ダッシュボードやAIを用いた業務支援ツールを、実際の作業に合わせて設計・開発します。対応範囲はデータ整理・可視化・業務支援ツール・既存業務への組み込み
+
+## 自社プロダクト
+
+### LEDGER（帳簿システム）
+
+- 種類: Webアプリ（ブラウザで使う。PCのブラウザでの利用を想定）
+- 対象: 個人事業主・フリーランス
+- できること: 収入・経費を簡単な入力で記録すると複式簿記の仕訳を自動で作成し、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます
+- データの保存先: 利用者のブラウザ内（IndexedDB）だけに保存し、サーバーには送信しません
+- 料金: 無料。インストール不要
+- 紹介ページ: https://www.catrare-tech.jp/ledger/
+- アプリ: https://www.catrare-tech.jp/apps/ledger/
+
+### WORKBILL（稼働報告・請求書）
+
+- 種類: Webアプリ（ブラウザで使う。PCのブラウザでの利用を想定）
+- 対象: フリーランス・個人事業主
+- できること: 日々の稼働時間を入力すると、契約条件に沿って報酬を自動計算し、月次の稼働報告書と請求書を作成・発行できます
+- データの保存先: 利用者のブラウザ内（IndexedDB）だけに保存し、サーバーには送信しません
+- 料金: 無料。インストール不要
+- 紹介ページ: https://www.catrare-tech.jp/workbill/
+- アプリ: https://www.catrare-tech.jp/apps/workbill/
+
+### Ride Metrics
+
+- 種類: iPhoneアプリ（App Store 近日公開）
+- できること: 自転車ライドの走行ルート・速度・距離・消費カロリーを計測します。任意でヘルスケア・カレンダーと連携し、走行後の詳しい統計や CSV・GPX での書き出しにも対応します
+- データの保存先: 端末内に保存し、当方のサーバーや広告・解析事業者へは送信しません
+- 料金: 無料
+- 紹介ページ: https://www.catrare-tech.jp/ridemetrics/ （英語版 https://www.catrare-tech.jp/ridemetrics/en/ ）
+- サポート: https://www.catrare-tech.jp/ridemetrics/support/
+- プライバシーポリシー: https://www.catrare-tech.jp/ridemetrics/privacy/
+
+### にゃんくらいむ
+
+- 種類: iPhoneゲーム（App Store 近日公開）
+- できること: iPhoneを傾けて猫を操作し、床から床へ跳び移りながら月を目指す縦スクロールのジャンプアクションゲームです。家から宇宙まで9つのステージがあります
+- データの保存先: ハイスコアと設定は端末内に保存します。広告の配信に Google AdMob を利用しています
+- 料金: 無料（広告表示あり）
+- 紹介ページ: https://www.catrare-tech.jp/nyanclimb/
+- サポート: https://www.catrare-tech.jp/nyanclimb/support/
+- プライバシーポリシー: https://www.catrare-tech.jp/nyanclimb/privacy/
+
+### ミヌエット風もふもふ猫スタンプ v2
+
+- 種類: LINEスタンプ
+- 内容: ミヌエットをモデルにした、もふもふ猫のやさしい癒しスタンプです
+- 販売ページ: https://store.line.me/stickershop/author/6473578/ja （LINE STORE）
+
+## ページ
+
+- [トップ](https://www.catrare-tech.jp/): サービス・担当実績・プロフィール・自社プロダクト・お知らせ・お問い合わせ
+- [担当実績](https://www.catrare-tech.jp/works/): これまでに担当した開発・運用の実績
+- [自社プロダクト](https://www.catrare-tech.jp/products/): 自社プロダクトの一覧
+- [お知らせ](https://www.catrare-tech.jp/news/): 各アプリのリリース情報やお知らせ
+- [プライバシーポリシー](https://www.catrare-tech.jp/privacy/): 公式サイトにおける個人情報の取り扱い
