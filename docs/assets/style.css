@@ -980,3 +980,28 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Webアプリの「開く」ボタン付近の PC 利用案内（紹介ページ ledger/・workbill/。画面幅1023px以下のみ。
+   catrare の docs/website/design/20-content.md §2.6.5） */
+
+.pc-note {
+  display: none;
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.open-action .pc-note {
+  margin-top: 8px;
+}
+
+/* 「開く」ボタンと案内をまとめた要素を含むボタン行。案内の分だけ他のボタンが縦に伸びないようにする */
+.buttons-start {
+  align-items: flex-start;
+}
+
+@media (max-width: 1023px) {
+  .pc-note {
+    display: block;
+  }
+}
