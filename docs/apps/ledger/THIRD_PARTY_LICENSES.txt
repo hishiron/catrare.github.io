@@ -8991,7 +8991,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 ================================================================================
-picomatch@4.0.5 (MIT)
+picomatch@4.0.7 (MIT)
 ================================================================================
 
 --- LICENSE ---
