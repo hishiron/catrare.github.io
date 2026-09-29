@@ -21,16 +21,6 @@
       "publishedAtLabel": "2026年9月28日"
     },
     {
-      "number": 583,
-      "title": "Catrare Ledger 1.4.0 を公開しました",
-      "app": "ledger",
-      "appLabel": "Catrare Ledger",
-      "kind": "update",
-      "kindLabel": "アップデート",
-      "publishedAt": "2026-09-28",
-      "publishedAtLabel": "2026年9月28日"
-    },
-    {
       "number": 521,
       "title": "Catrare Workbill（稼働報告・請求書）を公開しました",
       "app": "workbill",
