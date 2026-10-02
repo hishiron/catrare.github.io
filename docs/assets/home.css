@@ -696,10 +696,38 @@ a {
   font-size: 0.9375rem;
 }
 
-/* プロフィール（写真なし・テキスト中心） */
+/* プロフィール（オーナー提供の写真＋文章。PC は横並び、スマホは写真を上に） */
 
 .ct-profile {
+  display: grid;
+  gap: 24px;
+  max-width: 1000px;
+}
+
+.ct-profile-photo {
+  display: block;
+  width: 180px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+  background: var(--ct-color-surface);
+}
+
+.ct-profile-body {
   max-width: 720px;
+}
+
+@media (min-width: 768px) {
+  .ct-profile {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+  }
+
+  .ct-profile-photo {
+    width: 240px;
+  }
 }
 
 .ct-profile-name {
