@@ -17,3 +17,11 @@
 - Google User Messaging Platform 3.1.0: 大まかな位置、性能データ、操作情報。利用目的はアプリの機能（同意の管理）
 - 公式資料: https://developers.google.com/admob/ios/privacy/data-disclosure
 - 該当するポリシーの節: 3節（広告）、4節（同意の管理）、6節（第三者提供・外部への送信）
+
+## app-ads.txt
+
+`docs/app-ads.txt`（公開URL `https://www.catrare-tech.jp/app-ads.txt`）は、AdMobで広告を出すアプリ（現在はニャンクライム）の広告枠が正規のものであることを示すファイル。App Store Connectの掲載情報の「マーケティングURL」にこのサイトのURL（例: `https://www.catrare-tech.jp/nyanclimb/`）を登録すると、AdMobがここを読みに行く。クローラーは `www.` を外した `catrare-tech.jp/app-ads.txt` を見に行き、GitHub Pagesの転送で `www.catrare-tech.jp/app-ads.txt` に届く。
+
+- 記載するのはAdMobの管理画面（アプリ → app-ads.txt）に表示される1行。`pub-` 以降はAdMobのパブリッシャーID（アカウントごとに1つ）で、アプリが増えても行は増えない
+- 広告ネットワークを追加したときは、そのネットワークが指定する行を追記する
+- ファイル名・置き場所（サイトのルート）は変えない
