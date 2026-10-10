@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DEDUCT（確定申告準備） | カトレアテック</title>
+  <meta name="description" content="個人・個人事業主向けの確定申告準備アプリ「DEDUCT」の紹介ページです。源泉徴収票・社会保険料・生命保険料・医療費・ふるさと納税・家族の情報を年間を通して整理し、控除と還付の見込みを確認しながら、確定申告書等作成コーナーへ入力するためのサマリーを作れます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+  <link rel="canonical" href="https://www.catrare-tech.jp/deduct/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="カトレアテック" />
+  <meta property="og:title" content="DEDUCT（確定申告準備） | カトレアテック" />
+  <meta property="og:description" content="個人・個人事業主向けの確定申告準備アプリ「DEDUCT」の紹介ページです。源泉徴収票・社会保険料・生命保険料・医療費・ふるさと納税・家族の情報を年間を通して整理し、控除と還付の見込みを確認しながら、確定申告書等作成コーナーへ入力するためのサマリーを作れます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+  <meta property="og:url" content="https://www.catrare-tech.jp/deduct/" />
+  <meta property="og:image" content="https://www.catrare-tech.jp/assets/og/deduct.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DEDUCT（確定申告準備）" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="../" class="brand" aria-label="カトレアテック ホーム">
+        <img src="../assets/favicon.png" alt="カトレアテック ロゴ" />
+        <span class="brand-text">
+          <span>カトレアテック</span>
+          <span>Catrare Tech</span>
+        </span>
+      </a>
+
+      <nav>
+        <a href="../">トップへ戻る</a>
+        <a href="#features">機能</a>
+        <a href="#screens">画面</a>
+        <a href="#tech">技術スタック</a>
+        <a href="../ledger/">LEDGER</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero app-hero">
+      <div class="container">
+        <p class="eyebrow">Web App</p>
+        <h1>DEDUCT<span style="font-size: 0.5em; margin-left: 0.6em; letter-spacing: 0.04em;">確定申告準備</span></h1>
+        <p class="lead">
+          確定申告の準備を、1年を通して少しずつ進めるためのブラウザアプリです。源泉徴収票・社会保険料・生命保険料・医療費・ふるさと納税・家族の情報を登録しておくと、控除の見込みと準備の進み具合、所得税の還付・納付の見込みが分かり、国税庁の確定申告書等作成コーナーへ入力するためのサマリーを作れます。作成コーナーのマイナポータル連携と組み合わせて、連携で入らない分だけを整理する使い方にも対応しています。データはお使いのブラウザ内だけに保存され、サーバーには送信されません。
+        </p>
+
+        <ul class="badge-list">
+          <li>無料</li>
+          <li>インストール不要</li>
+          <li>データは端末内のみ</li>
+          <li>LEDGERと連携</li>
+        </ul>
+
+        <div class="buttons buttons-start">
+          <div class="open-action">
+            <a class="button button-primary" href="../apps/deduct/">DEDUCT を開く</a>
+            <p class="pc-note">PCのブラウザでのご利用を想定しています。</p>
+          </div>
+          <a class="button button-secondary" href="#features">機能を見る</a>
+          <a class="button button-secondary" href="#tech">技術スタック</a>
+        </div>
+
+        <figure class="shot" style="margin-top: 48px;">
+          <a href="assets/screenshots/01-dashboard.webp" target="_blank" rel="noopener"><img src="assets/screenshots/01-dashboard.webp" alt="DEDUCTのダッシュボード。次にやること・準備度・クイック入力・控除の見込みを表示し、控除の行を開くと内訳と元のデータが分かる" width="1600" height="1640" /></a>
+          <figcaption>ダッシュボード：「次にやること」と準備度で、申告までに残っている作業が分かります。控除の見込みは行を開くと内訳が表示され、元のデータへそのまま移動できます。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Features</h2>
+          <p>年間の記録から申告前の確認まで。</p>
+        </div>
+
+        <div class="features">
+          <div class="service-card">
+            <h3>源泉徴収票と所得の整理</h3>
+            <p>
+              源泉徴収票を紙面の順に入力し、給与所得・合計所得金額・源泉徴収税額をまとめて確認できます。転職で複数枚あるときの二重計上の確認にも対応します。退職所得の源泉徴収票・公的年金等・前年から繰り越す損失も登録でき、事業所得は LEDGER から取り込めます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>社会保険料・iDeCo・保険料</h3>
+            <p>
+              国民年金・国民健康保険・iDeCo・生命保険・地震保険などを、日常の言葉から選んで登録できます。源泉徴収票の社会保険料は自動で反映され、もう一度入力する必要はありません。保険会社などから受け取った電子的控除証明書（XML）を読み込んで登録することもできます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>医療費・セルフメディケーション税制</h3>
+            <p>
+              医療費を少ない入力で1件ずつ登録し、年間の累計をその場で確認できます。通常の医療費控除とセルフメディケーション税制の見込みを並べて比べられます。補填額が決まっていないものは要確認として残せます。作成コーナーの「医療費集計フォーム」へ明細を書き出すこともできます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>寄附・ふるさと納税</h3>
+            <p>
+              寄附を登録して寄附金控除の見込みを確認できます。登録した所得と控除から、自己負担を除いて全額が控除されるふるさと納税の上限の目安と、上限までの残りも表示します。ワンストップ特例を申請した寄附があると、確定申告で特例が使えなくなることを注意として表示します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>家族と控除の判定</h3>
+            <p>
+              家族の生年月日・同居・所得を登録すると、配偶者控除・配偶者特別控除・扶養控除・特定親族特別控除のどれに当たるかを年度のルールで判定します。障害者控除・寡婦控除・ひとり親控除・勤労学生控除・雑損控除も計算します。所得が未入力の家族は「判定不能」と表示し、必要な情報を案内します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>控除証明書などの証憑</h3>
+            <p>
+              控除証明書・領収書の画像やPDFを登録し、データに紐付けて保管できます。控除の種類ごとに書類の不足をチェックでき、同じ支払いや似ている登録の二重登録にも気づけます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>申告前チェックと準備度</h3>
+            <p>
+              申告前に確認したい項目を状態つきで一覧し、準備度として表示します。紙で保管している書類などは「システム外で対応済み」として記録できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>確定申告入力用サマリー</h3>
+            <p>
+              作成コーナーへ入力しやすい区分で、所得と所得控除の金額を一覧します。マイナポータル連携を使う年度は「連携で自動入力」「追加で手入力」「作成コーナーで確認」に分けて表示します。各控除の根拠（計算の考え方・内訳・入力元）を確認でき、印刷用表示・CSV・Markdown で出力できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>税額の概算・還付の見込み</h3>
+            <p>
+              所得と所得控除から所得税・復興特別所得税を概算し、源泉徴収税額と比べて「還付される見込み」「納める見込み」を表示します。医療費控除などで申告するとどれくらい戻るかの目安になります（参考値）。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>年度繰越・バックアップ</h3>
+            <p>
+              本人情報・家族・継続している契約を翌年度へ引き継げます。申告が終わった年度は申告済みにして編集を止められます。JSONバックアップ（暗号化にも対応）からの復元もできます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="container">
+        <div class="section-title">
+          <h2>Screens</h2>
+          <p>実際の画面をご覧ください。</p>
+        </div>
+
+        <p class="sample-note">
+          掲載している画面は、架空の「サンプル太郎」さんのダミーデータです（家族・医療機関・寄附先・金額はすべて架空のものです）。
+        </p>
+
+        <div class="feature-rows">
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>医療費を登録して累計を確認</h3>
+              <p>医療費は支払日・医療機関・金額を入れるだけで登録でき、月別・対象者別に一覧できます。年間の累計と、通常の医療費控除・セルフメディケーション税制の見込みも同じ画面で確認できます。</p>
+            <ul>
+              <li>補填額が決まっていない医療費は要確認として保存し、後から確定できる</li>
+              <li>医療費の明細をCSVで出力</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/02-medical.webp" target="_blank" rel="noopener"><img src="assets/screenshots/02-medical.webp" alt="DEDUCTの医療費一覧。年間累計と控除額の見込み、月別の医療費が並ぶ" width="1600" height="1769" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row feature-row-wide">
+            <div class="feature-text">
+              <h3>家族の控除を自動で判定</h3>
+              <p>家族を登録すると、配偶者控除・扶養控除などのどれに当たるかを年度のルールで判定し、一覧に表示します。判定に必要な情報が足りない家族は「判定不能」として、控除額に含めません。</p>
+            <ul>
+              <li>年齢は年度の12月31日時点で自動計算</li>
+              <li>国外に住む親族は判定せず、作成コーナーでの確認を案内</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/03-family.webp" target="_blank" rel="noopener"><img src="assets/screenshots/03-family.webp" alt="DEDUCTの家族一覧。続柄・年齢・生計と同居・所得・判定結果が並ぶ" width="1600" height="760" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>申告前チェックで残りの作業を確認</h3>
+              <p>所得・控除・証憑・重複・ルール・サマリーの出力まで、申告前に確認したい項目を状態つきで一覧します。各項目から該当する画面へ移動でき、当てはまらない項目は「該当なし」にできます。</p>
+            <ul>
+              <li>準備度は登録・確認状況の目安で、税務上の正しさを保証するものではありません</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/04-checklist.webp" target="_blank" rel="noopener"><img src="assets/screenshots/04-checklist.webp" alt="DEDUCTの申告前チェック。準備度と、項目ごとの状態・導線が並ぶ" width="1600" height="1500" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row feature-row-wide">
+            <div class="feature-text">
+              <h3>確定申告入力用サマリー</h3>
+              <p>作成コーナーへ入力するための一覧です。所得と各控除の金額に加えて、「根拠」を開くと計算の考え方・内訳・入力元・証憑の有無・適用したルールの版を確認できます。医療費控除の方式もここで選びます。</p>
+            <ul>
+              <li>マイナポータル連携を使う年度は「連携で自動入力」「追加で手入力」「作成コーナーで確認」に分けて表示</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/05-summary.webp" target="_blank" rel="noopener"><img src="assets/screenshots/05-summary.webp" alt="DEDUCTの確定申告入力用サマリー。所得の一覧と、医療費控除の方式選択・根拠の内訳が表示されている" width="1600" height="1500" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>還付・納付の見込みを確認</h3>
+              <p>登録した所得と所得控除から、所得税・復興特別所得税を概算して、源泉徴収税額との差を「還付される見込み」「納める見込み」として表示します。ダッシュボードとサマリーにも同じ見込みが出ます。</p>
+            <ul>
+              <li>住宅ローン控除などの税額控除・予定納税額は、分かっている額を入力して反映</li>
+              <li>参考値です。申告の金額は作成コーナーの計算に従います</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/07-tax-estimate.webp" target="_blank" rel="noopener"><img src="assets/screenshots/07-tax-estimate.webp" alt="DEDUCTの税額の概算画面。課税される所得金額から所得税・復興特別所得税を求め、源泉徴収税額との差を還付される見込みとして表示している" width="1600" height="1500" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>ふるさと納税の上限の目安</h3>
+              <p>寄附の一覧に、自己負担を除いて全額が控除されるふるさと納税の上限の目安と、登録済みの寄附・上限までの残りを表示します。住民税の所得割を概算して求めます。</p>
+            <ul>
+              <li>確定申告でもワンストップ特例でも同じ上限の目安</li>
+              <li>参考値です。正確な額はお住まいの市区町村でご確認ください</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/08-furusato.webp" target="_blank" rel="noopener"><img src="assets/screenshots/08-furusato.webp" alt="DEDUCTの寄附一覧。寄附金控除の見込みの下に、ふるさと納税の上限の目安・登録済みの寄附・上限までの残りが表示されている" width="1600" height="1500" loading="lazy" /></a>
+            </figure>
+          </div>
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3>出力したときの内容を保存して印刷</h3>
+              <p>サマリーを出力すると、その時点の計算結果を保存し、ルールの版・計算日時・アプリの版を印字します。後から入力を変えても、印刷の内容は変わりません。ブラウザの印刷機能から「PDFとして保存」もできます。</p>
+            <ul>
+              <li>出力後に入力を変えると、再出力をうながす表示が出る</li>
+              <li>CSV・Markdown でも出力</li>
+            </ul>
+            </div>
+            <figure class="shot">
+              <a href="assets/screenshots/06-print.webp" target="_blank" rel="noopener"><img src="assets/screenshots/06-print.webp" alt="DEDUCTのサマリー印刷画面。取扱注意の表示、ルールの版と計算日時、所得と所得控除の表" width="1600" height="1500" loading="lazy" /></a>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>ブラウザだけで完結する構成です。</p>
+        </div>
+
+        <table class="tech-table">
+          <tbody>
+            <tr><th scope="row">実行方式</th><td>ブラウザで動く静的Webアプリ（サーバー処理なし）。GitHub Pages で配布</td></tr>
+            <tr><th scope="row">フロントエンド</th><td>TypeScript ／ React 19 ／ Vite ／ React Router（HashRouter）</td></tr>
+            <tr><th scope="row">UI</th><td>Tailwind CSS v4 ／ shadcn/ui（Base UI）を土台にした共通UIパッケージ ／ Noto Sans JP（自己ホスト）</td></tr>
+            <tr><th scope="row">データ保存</th><td>IndexedDB（Dexie.js）。すべてブラウザ内に保存し、サーバーへは送信しません</td></tr>
+            <tr><th scope="row">状態管理・検証</th><td>Zustand ／ Zod（入力・バックアップ・年度別ルールの検証）</td></tr>
+            <tr><th scope="row">テスト・品質</th><td>Vitest（単体テスト）／ Playwright（E2E）／ Biome（Lint・Format）</td></tr>
+            <tr><th scope="row">開発体制</th><td>pnpm モノレポで LEDGER・WORKBILL と UI 部品を共有し、設計書を正としてテスト駆動で段階的に開発しています。</td></tr>
+          </tbody>
+        </table>
+
+        <div class="principles">
+          <div class="service-card">
+            <h3>ローカルファースト</h3>
+            <p>
+              医療・家族・給与の情報も含めて、データはお使いのブラウザのIndexedDBにだけ保存し、ネットワークへは送信しません。マイナンバーの入力欄はありません。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>税制の数値は年度別のルールに</h3>
+            <p>
+              控除額や所得の要件はコードに直接書かず、年度ごとのルールにまとめ、国税庁の資料で確認した出典と確認日を記録しています。年度が変わったときはルールの追加で対応します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>判断できないことは断定しない</h3>
+            <p>
+              家族の所得が未入力のときなど、判定に必要な情報が足りない場合は控除額を0とせず「判定不能」として示します。要確認のデータは控除額に含めず、別に表示します。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>LEDGERとの疎結合</h3>
+            <p>
+              事業所得は帳簿アプリの LEDGER が出力したJSONファイルで受け取ります。データベースは別々で、ファイルでだけ受け渡します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <div class="container">
+        <div class="section-title">
+          <h2>Notes</h2>
+          <p>ご利用にあたって</p>
+        </div>
+
+        <div class="note-box">
+          <p>本アプリは確定申告の準備を補助するツールで、税務上の正しさを保証するものではありません。申告は国税庁の確定申告書等作成コーナーで行い、控除の対象になるかどうかは証明書の記載や税務署などでご確認ください。税額の概算・ふるさと納税の上限の目安は参考値で、住宅ローン控除などの税額控除や申告分離課税の所得は計算しません。マイナポータルとは通信しません（連携は作成コーナー側で行います）。</p>
+          <p>データはお使いのブラウザにだけ保存されます。ブラウザのデータ削除や端末の変更で失われることがあるため、定期的にバックアップを保存してください。</p>
+          <p>PCのブラウザでの利用を想定しています。</p>
+        </div>
+
+        <div class="link-list">
+          <a class="button button-secondary" href="../ledger/">LEDGER（帳簿システム）の紹介</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="open">
+      <div class="container">
+        <div class="download-box">
+          <div>
+            <h2>DEDUCT を使ってみる</h2>
+            <p>
+              登録・ログインは不要です。ブラウザで開くとすぐに使えます。初めて開いたときは空の状態です。
+            </p>
+          </div>
+
+          <div class="open-action">
+            <a class="button button-primary" href="../apps/deduct/">DEDUCT を開く</a>
+            <p class="pc-note">PCのブラウザでのご利用を想定しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© Catrare Tech</span>
+      <span>DEDUCT</span>
+      <span><a href="../ledger/">LEDGER</a></span>
+      <span><a href="../privacy/">プライバシーポリシー</a></span>
+    </div>
+  </footer>
+</body>
+</html>
