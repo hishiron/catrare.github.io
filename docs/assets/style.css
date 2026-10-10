@@ -232,6 +232,26 @@ section {
   white-space: nowrap;
 }
 
+/* LEDGER/WORKBILL紹介ページ: 大きな日本語の見出しをh2に、英語の小さなラベルをpにする。
+   見た目は従来の「h2=英語ラベル・p=見出し」と同じにする（issue #699） */
+.section-title .section-label {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: normal;
+}
+
+.section-title h2.section-heading {
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--text);
+  white-space: nowrap;
+}
+
 .about-text {
   max-width: 760px;
   color: var(--muted);
@@ -316,6 +336,15 @@ footer {
   }
 
   .section-title p {
+    font-size: 22px;
+    white-space: normal;
+  }
+
+  .section-title .section-label {
+    font-size: 14px;
+  }
+
+  .section-title h2.section-heading {
     font-size: 22px;
     white-space: normal;
   }

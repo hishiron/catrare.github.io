@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>LEDGER（帳簿システム） | カトレアテック</title>
-  <meta name="description" content="個人事業主・フリーランス向けの帳簿システム「LEDGER」の紹介ページです。収入・経費を入力すると複式簿記の仕訳を自動作成し、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+  <title>LEDGER 帳簿システム｜個人事業主・フリーランス向けの無料帳簿アプリ | カトレアテック</title>
+  <meta name="description" content="個人事業主・フリーランス向けの無料の帳簿アプリ「LEDGER」。登録不要・インストール不要で、ブラウザを開くだけで使えます。収入・経費を入力すると複式簿記の仕訳を自動で作成し、家事按分や減価償却も計算します。損益計算書・貸借対照表と、青色申告決算書・収支内訳書への転記用の集計を出力できます。データはブラウザ内だけに保存されます。" />
   <link rel="canonical" href="https://www.catrare-tech.jp/ledger/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="カトレアテック" />
-  <meta property="og:title" content="LEDGER（帳簿システム） | カトレアテック" />
-  <meta property="og:description" content="個人事業主・フリーランス向けの帳簿システム「LEDGER」の紹介ページです。収入・経費を入力すると複式簿記の仕訳を自動作成し、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。無料・インストール不要で、データはブラウザ内だけに保存されます。" />
+  <meta property="og:title" content="LEDGER 帳簿システム｜個人事業主・フリーランス向けの無料帳簿アプリ | カトレアテック" />
+  <meta property="og:description" content="個人事業主・フリーランス向けの無料の帳簿アプリ「LEDGER」。登録不要・インストール不要で、ブラウザを開くだけで使えます。収入・経費を入力すると複式簿記の仕訳を自動で作成し、家事按分や減価償却も計算します。損益計算書・貸借対照表と、青色申告決算書・収支内訳書への転記用の集計を出力できます。データはブラウザ内だけに保存されます。" />
   <meta property="og:url" content="https://www.catrare-tech.jp/ledger/" />
   <meta property="og:image" content="https://www.catrare-tech.jp/assets/og/ledger.png" />
   <meta property="og:image:width" content="1200" />
@@ -22,6 +22,58 @@
   <link rel="stylesheet" href="../assets/style.css" />
   <link rel="icon" type="image/png" href="../assets/favicon.png" />
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "LEDGER",
+        "alternateName": "Catrare Ledger",
+        "description": "個人事業主・フリーランス向けの無料の帳簿アプリ「LEDGER」。登録不要・インストール不要で、ブラウザを開くだけで使えます。収入・経費を入力すると複式簿記の仕訳を自動で作成し、家事按分や減価償却も計算します。損益計算書・貸借対照表と、青色申告決算書・収支内訳書への転記用の集計を出力できます。データはブラウザ内だけに保存されます。",
+        "url": "https://www.catrare-tech.jp/ledger/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "ja",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "JPY"
+        },
+        "image": "https://www.catrare-tech.jp/assets/og/ledger.png",
+        "publisher": {
+          "@type": "Organization",
+          "name": "カトレアテック",
+          "url": "https://www.catrare-tech.jp/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "カトレアテック",
+            "item": "https://www.catrare-tech.jp/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "自社プロダクト",
+            "item": "https://www.catrare-tech.jp/products/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "LEDGER",
+            "item": "https://www.catrare-tech.jp/ledger/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -40,6 +92,7 @@
         <a href="#features">機能</a>
         <a href="#screens">画面</a>
         <a href="#tech">技術スタック</a>
+        <a href="#faq">よくある質問</a>
         <a href="../workbill/">WORKBILL</a>
       </nav>
     </div>
@@ -51,7 +104,7 @@
         <p class="eyebrow">Web App</p>
         <h1>LEDGER<span style="font-size: 0.5em; margin-left: 0.6em; letter-spacing: 0.04em;">帳簿システム</span></h1>
         <p class="lead">
-          個人事業主・フリーランスのための、ブラウザで使う帳簿システムです。収入・経費を簡単な入力で記録すると、複式簿記の仕訳が自動で作られ、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。データはお使いのブラウザ内だけに保存され、サーバーには送信されません。
+          個人事業主・フリーランスのための、ブラウザで無料で使える帳簿システムです。収入・経費を簡単な入力で記録すると、複式簿記の仕訳が自動で作られ、損益計算書・貸借対照表・青色申告決算書の転記用データまで出力できます。データはお使いのブラウザ内だけに保存され、サーバーには送信されません。
         </p>
 
         <ul class="badge-list">
@@ -80,8 +133,8 @@
     <section id="features">
       <div class="container">
         <div class="section-title">
-          <h2>Features</h2>
-          <p>記帳から申告用の集計まで。</p>
+          <p class="section-label">Features</p>
+          <h2 class="section-heading">記帳から確定申告用の集計まで</h2>
         </div>
 
         <div class="features">
@@ -146,8 +199,8 @@
     <section id="screens">
       <div class="container">
         <div class="section-title">
-          <h2>Screens</h2>
-          <p>実際の画面をご覧ください。</p>
+          <p class="section-label">Screens</p>
+          <h2 class="section-heading">帳簿づけの実際の画面</h2>
         </div>
 
         <p class="sample-note">
@@ -223,8 +276,8 @@
         </div>
 
         <div class="section-title" style="margin-top: 80px;">
-          <h2>Reports</h2>
-          <p>帳簿と申告用の出力</p>
+          <p class="section-label">Reports</p>
+          <h2 class="section-heading">帳簿と確定申告用の出力</h2>
         </div>
 
         <div class="shot-grid">
@@ -251,8 +304,8 @@
     <section id="tech">
       <div class="container">
         <div class="section-title">
-          <h2>Tech Stack</h2>
-          <p>ブラウザだけで完結する構成です。</p>
+          <p class="section-label">Tech Stack</p>
+          <h2 class="section-heading">ブラウザだけで完結する構成</h2>
         </div>
 
         <table class="tech-table">
@@ -301,8 +354,8 @@
     <section id="notes">
       <div class="container">
         <div class="section-title">
-          <h2>Notes</h2>
-          <p>ご利用にあたって</p>
+          <p class="section-label">Notes</p>
+          <h2 class="section-heading">ご利用にあたって</h2>
         </div>
 
         <div class="note-box">
@@ -314,6 +367,72 @@
         <div class="link-list">
           <a class="button button-secondary" href="../workbill/">WORKBILL（稼働報告・請求書）の紹介</a>
           <a class="button button-secondary" href="../deduct/">DEDUCT（確定申告準備）の紹介</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <p class="section-label">FAQ</p>
+          <h2 class="section-heading">よくある質問</h2>
+        </div>
+
+        <div class="features">
+          <div class="service-card">
+            <h3>本当に無料で使えますか？</h3>
+            <p>
+              はい、無料です。登録・ログインも不要で、ブラウザで開くとすぐに使えます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>入力したデータはどこに保存されますか？</h3>
+            <p>
+              お使いのブラウザ内（IndexedDB）にだけ保存し、サーバーには送信しません。ブラウザのデータを削除すると失われるため、バックアップ画面から定期的にバックアップを保存してください。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>簿記の知識がなくても使えますか？</h3>
+            <p>
+              収入・経費を日付・勘定科目・取引先・金額で登録すると、仕訳（借方・貸方）は自動で作られます。画面ごとのガイドと用語集も用意しています。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>青色申告・白色申告に使えますか？</h3>
+            <p>
+              青色申告決算書（損益計算書）と、白色申告の収支内訳書へ転記するための集計を出力できます。確定申告書の作成・提出は、国税庁の確定申告書等作成コーナーなどで行ってください。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>家事按分はできますか？</h3>
+            <p>
+              自宅家賃や通信費など、仕事とプライベート兼用の支出は、科目ごとに決めた按分率で事業利用額を自動で計算します。期間ごとに按分率を切り替えることもできます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>領収書などの証憑も管理できますか？</h3>
+            <p>
+              領収書・請求書などの証憑を取引に紐付けて保存し、日付・金額・取引先で検索できます。領収書のない支出は出金伝票で記録できます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>別のパソコンでも使えますか？</h3>
+            <p>
+              バックアップ画面でバックアップファイルを保存し、移したいパソコンのブラウザで復元すると、同じデータを使えます。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>スマートフォンでも使えますか？</h3>
+            <p>
+              PCのブラウザでのご利用を想定しています。
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>請求書は作れますか？</h3>
+            <p>
+              請求書と稼働報告書は、姉妹アプリのWORKBILL（無料）で作成できます。WORKBILLで確定した請求データは、LEDGERへ取り込めます。
+            </p>
+          </div>
         </div>
       </div>
     </section>
