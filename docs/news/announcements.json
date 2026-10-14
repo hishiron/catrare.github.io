@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "number": 771,
+      "title": "Catrare Workbill 1.10.0 を公開しました",
+      "app": "workbill",
+      "appLabel": "Catrare Workbill",
+      "kind": "update",
+      "kindLabel": "アップデート",
+      "publishedAt": "2026-10-14",
+      "publishedAtLabel": "2026年10月14日"
+    },
+    {
       "number": 746,
       "title": "Catrare Ledger 1.10.0 を公開しました",
       "app": "ledger",
