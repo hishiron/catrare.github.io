@@ -46,11 +46,12 @@
 
 ### Ride Metrics
 
-- 種類: iPhoneアプリ（App Store 近日公開）
+- 種類: iPhoneアプリ（App Storeで配信中）
 - できること: 自転車ライドの走行ルート・速度・距離・消費カロリーを計測します。任意でヘルスケア・カレンダーと連携し、走行後の詳しい統計や CSV・GPX での書き出しにも対応します
 - データの保存先: 端末内に保存し、当方のサーバーや広告・解析事業者へは送信しません
 - 料金: 無料
 - 紹介ページ: https://www.catrare-tech.jp/ridemetrics/ （英語版 https://www.catrare-tech.jp/ridemetrics/en/ ）
+- App Store: https://apps.apple.com/jp/app/id6809061164
 - サポート: https://www.catrare-tech.jp/ridemetrics/support/
 - プライバシーポリシー: https://www.catrare-tech.jp/ridemetrics/privacy/
 
