@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "number": 819,
+      "title": "Catrare Deduct 1.8.0 を公開しました",
+      "app": "deduct",
+      "appLabel": "Catrare Deduct",
+      "kind": "update",
+      "kindLabel": "アップデート",
+      "publishedAt": "2026-10-22",
+      "publishedAtLabel": "2026年10月22日"
+    },
+    {
       "number": 778,
       "title": "Catrare Workbill 1.11.0 を公開しました",
       "app": "workbill",
