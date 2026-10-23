@@ -57,11 +57,12 @@
 
 ### にゃんくらいむ
 
-- 種類: iPhoneゲーム（App Store 近日公開）
+- 種類: iPhoneゲーム（App Storeで配信中）
 - できること: iPhoneを傾けて猫を操作し、床から床へ跳び移りながら月を目指す縦スクロールのジャンプアクションゲームです。家から宇宙まで9つのステージがあります
 - データの保存先: ハイスコアと設定は端末内に保存します。広告の配信に Google AdMob を利用しています
 - 料金: 無料（広告表示あり）
 - 紹介ページ: https://www.catrare-tech.jp/nyanclimb/
+- App Store: https://apps.apple.com/jp/app/id6809079250
 - サポート: https://www.catrare-tech.jp/nyanclimb/support/
 - プライバシーポリシー: https://www.catrare-tech.jp/nyanclimb/privacy/
 

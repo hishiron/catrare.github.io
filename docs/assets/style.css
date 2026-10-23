@@ -1053,10 +1053,6 @@ footer {
 
 /* にゃんくらいむ 紹介ページ（docs/nyanclimb/） */
 
-.app-hero .status-badge {
-  margin: 0 0 20px;
-}
-
 /* ステージ一覧: アプリの背景画像（4:3）＋番号＋名前。PCもスマホも3列 */
 .stage-grid {
   display: grid;
