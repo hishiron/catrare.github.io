@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>カトレアテック | システム開発・運用改善 | Catrare Tech</title>
@@ -19,15 +20,7 @@
   <meta property="og:locale" content="ja_JP" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <script>
-    // モバイルメニューを最初の描画から閉じた状態で描き、初期化時のレイアウトのずれを防ぐ。
-    // home.js が読み込めなかった場合は DOMContentLoaded 時点で外し、ナビを表示に戻す
-    // （defer の成否はこの時点で確定し、画像の読み込み完了は待たない）。
-    document.documentElement.classList.add("ct-js");
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!document.querySelector(".ct-header.is-enhanced")) document.documentElement.classList.remove("ct-js");
-    });
-  </script>
+  <script src="assets/home-init.js"></script>
   <link rel="stylesheet" href="assets/home.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
