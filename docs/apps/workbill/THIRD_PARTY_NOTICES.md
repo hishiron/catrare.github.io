@@ -357,11 +357,11 @@ SOFTWARE.
 
 コンポーネントのヘッドレスプリミティブ。本番依存として本アプリの `pnpm list --prod` に現れ、`writeDependencyLicenses` が機械的に収録する。
 
-| パッケージ | ライセンス | 役割 |
-|---|---|---|
-| `@base-ui/react` | MIT | ヘッドレスプリミティブ |
-| `cn` | MIT | `twMerge(clsx(...))` 相当（shadcn公式） |
-| `class-variance-authority` | Apache-2.0 | variant定義 |
-| `lucide-react` | ISC | コンポーネント内部の機能アイコン |
-| `tw-animate-css` | MIT | 開閉アニメーション用ユーティリティ |
-| `shadcn` | MIT | `shadcn/tailwind.css` の提供元・CLI |
+| パッケージ                 | ライセンス | 役割                                    |
+| -------------------------- | ---------- | --------------------------------------- |
+| `@base-ui/react`           | MIT        | ヘッドレスプリミティブ                  |
+| `cn`                       | MIT        | `twMerge(clsx(...))` 相当（shadcn公式） |
+| `class-variance-authority` | Apache-2.0 | variant定義                             |
+| `lucide-react`             | ISC        | コンポーネント内部の機能アイコン        |
+| `tw-animate-css`           | MIT        | 開閉アニメーション用ユーティリティ      |
+| `shadcn`                   | MIT        | `shadcn/tailwind.css` の提供元・CLI     |
